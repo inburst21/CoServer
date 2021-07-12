@@ -3,8 +3,7 @@ namespace Redux
 {
     public static class Constants
     {
-        private const int RATE_MULTI = 10000000;
-        public static readonly uint[] AUTO_LOOTABLE = new uint[] { DRAGONBALL_ID, METEOR_ID };
+        private const int RATE_MULTI = 10;
         public static readonly uint[] ignoredPackets = new uint[] { 1009, 1010 };
 
 
@@ -133,5 +132,8 @@ namespace Redux
 
         public const int MAX_AOE_TARGETS = 75;
         public const int MAX_AUTO_GEAR_LEVEL = 120;
+
+        public static readonly uint[] AUTO_LOOTABLE = new uint[] { DRAGONBALL_ID, METEOR_ID };
+        public const bool AUTO_LOOT_ENABLED = false;
     }
 }
