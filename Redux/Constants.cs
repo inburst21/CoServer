@@ -131,6 +131,7 @@ namespace Redux
         public static readonly string[] GemEffectsByID = new string[] { "phoenix", "goldendragon", "lounder1", "rainbow", "goldenkylin", "purpleray", "moon", "recovery", };
 
         public const int MAX_AOE_TARGETS = 75;
+        public const int MAX_AUTO_GEAR_LEVEL = 120;
 
         public static readonly uint[] AUTO_LOOTABLE = new uint[] { DRAGONBALL_ID, METEOR_ID };
         public const bool AUTO_LOOT_ENABLED = false;
