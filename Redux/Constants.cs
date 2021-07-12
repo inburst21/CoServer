@@ -3,8 +3,7 @@ namespace Redux
 {
     public static class Constants
     {
-        private const int RATE_MULTI = 10000000;
-        public static readonly uint[] AUTO_LOOTABLE = new uint[] { DRAGONBALL_ID, METEOR_ID };
+        private const int RATE_MULTI = 10;
         public static readonly uint[] ignoredPackets = new uint[] { 1009, 1010 };
 
 
@@ -132,5 +131,8 @@ namespace Redux
         public static readonly string[] GemEffectsByID = new string[] { "phoenix", "goldendragon", "lounder1", "rainbow", "goldenkylin", "purpleray", "moon", "recovery", };
 
         public const int MAX_AOE_TARGETS = 75;
+
+        public static readonly uint[] AUTO_LOOTABLE = new uint[] { DRAGONBALL_ID, METEOR_ID };
+        public const bool AUTO_LOOT_ENABLED = false;
     }
 }

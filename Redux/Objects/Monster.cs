@@ -253,7 +253,7 @@ namespace Redux.Game_Server
                 if (Common.PercentSuccess(Constants.CHANCE_PLUS))
                     coItem.Plus = 1;
 
-                if (client != null && Constants.AUTO_LOOTABLE.Contains(_id) && client.Inventory.Count < 40 && client.AddItem(coItem))
+                if (client != null && Constants.AUTO_LOOT_ENABLED && Constants.AUTO_LOOTABLE.Contains(_id) && client.Inventory.Count < 40 && client.AddItem(coItem))
                 {
                     coItem.SetOwner(client);
                     client.Send(ItemInformationPacket.Create(coItem));
