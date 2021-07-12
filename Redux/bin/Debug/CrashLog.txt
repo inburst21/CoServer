@@ -1,0 +1,93 @@
+ERROR PROCESSING PACKET FOR USER: NONE
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Redux.Game_Server.GameServer.Process_MsgConnectPacket(Player client, ConnectPacket packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 304
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 144
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 102
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1229
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 653
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1229
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 653
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1229
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 653
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1227
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 651
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1227
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 651
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1227
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 651
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1227
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 651
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
+ERROR PROCESSING PACKET FOR USER: Inburst
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Redux.Managers.CombatManager.StopTimer(String timer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 1227
+   at Redux.Managers.CombatManager.DealSkillDamage() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 651
+   at Redux.Managers.CombatManager.DealSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 588
+   at Redux.Managers.CombatManager.LaunchSkill() in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 281
+   at Redux.Managers.CombatManager.ProcessSkill(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 217
+   at Redux.Managers.CombatManager.ProcessInteractionPacket(InteractPacket _packet) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Managers\CombatManager.cs:line 116
+   at Redux.Game_Server.GameServer.ProcessPacket(Player client, Byte* ptr, Byte[] safePacket, UInt16 type) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 155
+   at Redux.Game_Server.GameServer.OnReceive(NetworkClient client, Byte[] buffer) in C:\Users\Lenny\Desktop\Redux3.05\Redux\Network\GameServer.cs:line 105
