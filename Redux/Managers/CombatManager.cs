@@ -625,11 +625,9 @@ namespace Redux.Managers
         #region Deal Skill By Type
         private void DealSkillDamage()
         {
-            StartTimer("Skill Damage loop"); 
 
             if (packet.TargetCount > 0)
             {
-                targetCount = packet.TargetCount;
                 foreach (var t in packet.GetTargets())
                 {
                     var target = owner.Map.Search<Entity>(t.Key);
@@ -638,9 +636,6 @@ namespace Redux.Managers
                 }
             }
         }
-
-        int targetCount = 0;
-        int currentTargets = 0;
 
         private void ProcessTarget(Entity target)
         {
@@ -679,13 +674,6 @@ namespace Redux.Managers
             {
                 owner.RemoveStatus(Enum.ClientStatus.Intensify);
                 owner.RemoveEffect(ClientEffect.Intensify);
-            }
-
-            currentTargets++;
-            if (targetCount == currentTargets)
-            {
-                StopTimer("Skill Damage loop");
-                currentTargets = 0;
             }
         }
 

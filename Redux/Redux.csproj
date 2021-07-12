@@ -438,6 +438,7 @@
     <Compile Include="Threading\ThreadBase.cs" />
     <Compile Include="Threading\WorldThread.cs" />
     <Compile Include="Packets\NetStringPacker.cs" />
+    <Compile Include="Utility\COLogger.cs" />
     <Compile Include="Utility\ThreadSafeCounter.cs" />
     <Compile Include="Utility\ThreadSafeRandom.cs" />
     <EmbeddedResource Include="ConfigCreatorForm.resx">
