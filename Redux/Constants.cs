@@ -132,5 +132,6 @@ namespace Redux
         public static readonly string[] GemEffectsByID = new string[] { "phoenix", "goldendragon", "lounder1", "rainbow", "goldenkylin", "purpleray", "moon", "recovery", };
 
         public const int MAX_AOE_TARGETS = 75;
+        public const int MAX_AUTO_GEAR_LEVEL = 120;
     }
 }

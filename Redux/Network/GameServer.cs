@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Linq;
 using Redux.Utility;
+using Redux.Features.AutoGearLevel;
 
 namespace Redux.Game_Server
 {
@@ -59,7 +60,8 @@ namespace Redux.Game_Server
         #region Client Connect
         public static void OnConnect(NetworkClient client)
         {
-            var player = new Player(client);
+            var gearLeveler = new AutoGearLevelImpl();
+            var player = new Player(client, gearLeveler);
             player.StartExchange();
             client.Owner = player;
         }

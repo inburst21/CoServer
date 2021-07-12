@@ -70,6 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\AutoGearLevel\AutoGearLevelImpl.cs" />
+    <Compile Include="Features\AutoGearLevel\IAutoGearLevel.cs" />
     <Compile Include="TextBoxStreamWriter.cs" />
     <Compile Include="Commands.cs" />
     <Compile Include="ConfigCreatorForm.cs">

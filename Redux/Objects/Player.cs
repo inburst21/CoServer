@@ -12,6 +12,7 @@ using Redux.Managers;
 using Redux.Enum;
 using Redux.Packets.Game;
 using Redux.Structures;
+using Redux.Features.AutoGearLevel;
 
 namespace Redux.Game_Server
 {
@@ -33,6 +34,7 @@ namespace Redux.Game_Server
         public AssociateManager AssociateManager;
         public WarehouseManager WarehouseManager;
         public TeamManager Team;
+        private readonly IAutoGearLevel autoGearLevel;
 
         public Structures.GuildAttr GuildAttribute { get; set; }
         public uint GuildId { get { return GuildAttribute.GuildId; } }
@@ -304,13 +306,14 @@ namespace Redux.Game_Server
         #endregion
 
         #region Constructor
-        public Player(NetworkClient client)
+        public Player(NetworkClient client, IAutoGearLevel gearLeveler)
             : base()
         {
             Socket = client;
             ToSend = new ConcurrentQueue<byte[]>();
             _cryptographer = new GameCryptography(Common.ENCRYPTION_KEY);
             _exchange = new ServerKeyExchange();
+            autoGearLevel = gearLeveler;
             //GuildAttribute = new Structures.GuildAttr(this);
         }
         #endregion
@@ -404,6 +407,11 @@ namespace Redux.Game_Server
                     Character.Agility = stats.Agility;
                     Character.Spirit = stats.Spirit;
                 }
+            }
+
+            if (Level <= Constants.MAX_AUTO_GEAR_LEVEL)
+            {
+                autoGearLevel.OnLevelUp(this);
             }
 
             Send(UpdatePacket.Create(UID, UpdateType.Level, Level));
